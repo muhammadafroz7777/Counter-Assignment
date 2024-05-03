@@ -1,0 +1,46 @@
+body{
+    background-image: url(./image/bg.jpg);
+  }
+  
+  .parrent{
+      width: 1280px;
+      margin: 200px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      
+      
+      h1 {
+          text-align: center;
+          font-size: 60px;
+        }
+        
+        .container {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          max-width: 600px;
+          margin: 0px auto;
+          margin-bottom: 20px;
+          
+        }
+        
+        .box {
+          height: 90px;
+          width: 90px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid violet;
+          font-size: 30px;
+          cursor: pointer;
+          border-radius: 10px;
+          transition: 0.2s ease-in-out;
+        }
+        .box:hover {
+          background-color: violet;
+          color: white;
+          transition: 0.2s ease-in-out;
+          transform: scale(1.08);
+        }

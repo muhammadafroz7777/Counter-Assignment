@@ -49,7 +49,103 @@
 
 
 // -------------------------Counter Assignment Start-----------------
+// var hours = document.getElementById("hours")
+// var minutes = document.getElementById("minutes")
+// var seconds = document.getElementById("seconds")
+// var Day = document.getElementById("day")
+// var Month = document.getElementById("month")
+// var Year = document.getElementById("year")
+// var Medium = document.getElementById("medium")
 
+
+
+// setInterval(function(){
+   
+//     var currentDate = new Date();
+//     var currentHour = currentDate.getHours();
+//     var dayNames = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+//     var MonthNames = ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"];
+
+//     hours.innerText = currentDate.getHours();
+//     minutes.innerText = currentDate.getMinutes();
+//     seconds.innerText = currentDate.getSeconds();
+//     Day.innerText = dayNames[currentDate.getDay()];
+//     Month.innerText = MonthNames[currentDate.getMonth()];
+//     Year.innerText = currentDate.getFullYear();
+//     if(hours.innerText < 13){
+//         medium.innerText = "AM";
+
+//     }
+//     else{
+//         medium.innerText = "PM";
+//     }
+// }, 1000);
+// --------------------
+// var now = new Date();
+// var BakraEid = new Date("6/16/2024");  //mm/dd/yyyy
+// var bkmilleseconds = now.getTime();
+// var BakraEidMillseconds = BakraEid.getTime();
+// var diff = BakraEidMillseconds - bkmilleseconds;
+// console.log("milleseconds=>", diff);
+// var bkminutes = Math.floor(diff / 1000 / 60);
+// console.log("minutes=>", bkminutes);
+
+
+
+
+
+
+
+
+// var hours = document.getElementById("hours")
+// var minutes = document.getElementById("minutes")
+// var seconds = document.getElementById("seconds")
+// var Day = document.getElementById("day")
+// var Month = document.getElementById("month")
+// var Year = document.getElementById("year")
+// var Medium = document.getElementById("medium")
+
+
+
+var bkminutes = document.getElementById("minutes");
+
+
+
+setInterval(function(){
+
+var now = new Date();
+var BakraEid = new Date("6/16/2024");  //mm/dd/yyyy
+var bkmilleseconds = now.getTime();
+var BakraEidMillseconds = BakraEid.getTime();
+var diff = BakraEidMillseconds - bkmilleseconds;
+console.log("milleseconds=>", diff);
+var bkminutes = Math.floor(diff / 1000 / 60);
+
+
+bkminutes.innerText = bkminutes.getMinutes();
+
+
+
+   
+//     var currentDate = new Date();
+//     var currentHour = currentDate.getHours();
+//     var dayNames = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+//     var MonthNames = ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"];
+
+//     hours.innerText = currentDate.getHours();
+//     minutes.innerText = currentDate.getMinutes();
+//     seconds.innerText = currentDate.getSeconds();
+//     Day.innerText = dayNames[currentDate.getDay()];
+//     Month.innerText = MonthNames[currentDate.getMonth()];
+//     Year.innerText = currentDate.getFullYear();
+//     if(hours.innerText < 13){
+//         medium.innerText = "AM";
+
+//     }
+//     else{
+//         medium.innerText = "PM";
+//     }
+}, 1000);
 
 
 
