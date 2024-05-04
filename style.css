@@ -1,5 +1,5 @@
 body{
-    background-image: url(./image/bg.jpg);
+    background-image: url(./image/bakra.jpg);
   }
   
   .parrent{
@@ -14,6 +14,7 @@ body{
       h1 {
           text-align: center;
           font-size: 40px;
+          color: #ffffff;
           
         }
         
@@ -33,15 +34,17 @@ body{
           display: flex;
           justify-content: center;
           align-items: center;
-          border: 1px solid violet;
+          border: 2px solid ;
+          border-color: #FEE36D;
           font-size: 25px;
           cursor: pointer;
           border-radius: 20px;
           transition: 0.2s ease-in-out;
           padding: 10px;
+          color: #ffffff;
         }
         .box:hover {
-          background-color: violet;
+          background-color: #000661;
           color: white;
           transition: 0.2s ease-in-out;
           transform: scale(1.08);
@@ -52,5 +55,6 @@ body{
           justify-content: center;
           align-items: center;
           gap: 82px;
-          color: orange;
+          color: #ffffff;
+          font-weight: 600;
         }
