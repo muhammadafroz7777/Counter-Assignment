@@ -97,17 +97,16 @@
 
 
 
-// var hours = document.getElementById("hours")
-// var minutes = document.getElementById("minutes")
-// var seconds = document.getElementById("seconds")
-// var Day = document.getElementById("day")
-// var Month = document.getElementById("month")
-// var Year = document.getElementById("year")
-// var Medium = document.getElementById("medium")
+var hours = document.getElementById("hours")
+var minutes = document.getElementById("minutes")
+var seconds = document.getElementById("seconds")
+var Day = document.getElementById("day")
+var Month = document.getElementById("month")
+var Year = document.getElementById("year")
+var Medium = document.getElementById("medium")
 
 
 
-var bkminutes = document.getElementById("minutes");
 
 
 
@@ -119,10 +118,14 @@ var bkmilleseconds = now.getTime();
 var BakraEidMillseconds = BakraEid.getTime();
 var diff = BakraEidMillseconds - bkmilleseconds;
 console.log("milleseconds=>", diff);
-var bkminutes = Math.floor(diff / 1000 / 60);
+var bkseconds = Math.floor(diff / 1000 );
+var bkminutes = Math.floor(diff / 1000/60 );
+var bkhours = Math.floor(diff / 1000/60/60 );
 
 
-bkminutes.innerText = bkminutes.getMinutes();
+seconds.innerText = bkseconds;
+minutes.innerText = bkminutes;
+hours.innerText = bkhours;
 
 
 
