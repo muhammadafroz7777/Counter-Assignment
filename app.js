@@ -97,13 +97,14 @@
 
 
 
-var hours = document.getElementById("hours")
-var minutes = document.getElementById("minutes")
-var seconds = document.getElementById("seconds")
-var Day = document.getElementById("day")
-var Month = document.getElementById("month")
-var Year = document.getElementById("year")
-var Medium = document.getElementById("medium")
+var $hours = document.getElementById("@hours")
+var $minutes = document.getElementById("@minutes")
+var $seconds = document.getElementById("@seconds")
+
+var $Month = document.getElementById("@month")
+
+var $Medium = document.getElementById("@medium")
+var $sphour = document.getElementById("sphour");
 
 
 
@@ -121,11 +122,17 @@ console.log("milleseconds=>", diff);
 var bkseconds = Math.floor(diff / 1000 );
 var bkminutes = Math.floor(diff / 1000/60 );
 var bkhours = Math.floor(diff / 1000/60/60 );
+var bkmedium = Math.floor(diff / 1000/60/60/24);
+var bkmonth = Math.floor(diff / 1000/60/60/24/30);
 
 
-seconds.innerText = bkseconds;
-minutes.innerText = bkminutes;
-hours.innerText = bkhours;
+
+$seconds.innerText = bkseconds;
+$minutes.innerText = bkminutes;
+$hours.innerText = bkhours;
+$Month.innerText = bkmonth;
+$Medium.innerText = bkmedium;
+
 
 
 

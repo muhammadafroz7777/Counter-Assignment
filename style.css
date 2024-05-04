@@ -13,7 +13,8 @@ body{
       
       h1 {
           text-align: center;
-          font-size: 60px;
+          font-size: 40px;
+          
         }
         
         .container {
@@ -33,14 +34,23 @@ body{
           justify-content: center;
           align-items: center;
           border: 1px solid violet;
-          font-size: 30px;
+          font-size: 25px;
           cursor: pointer;
-          border-radius: 10px;
+          border-radius: 20px;
           transition: 0.2s ease-in-out;
+          padding: 10px;
         }
         .box:hover {
           background-color: violet;
           color: white;
           transition: 0.2s ease-in-out;
           transform: scale(1.08);
+        }
+
+        .spcontainer{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 82px;
+          color: orange;
         }
