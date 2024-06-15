@@ -114,7 +114,7 @@ var $sphour = document.getElementById("sphour");
 setInterval(function(){
 
 var now = new Date();
-var BakraEid = new Date("6/16/2024");  //mm/dd/yyyy
+var BakraEid = new Date("6/17/2024");  //mm/dd/yyyy
 var bkmilleseconds = now.getTime();
 var BakraEidMillseconds = BakraEid.getTime();
 var diff = BakraEidMillseconds - bkmilleseconds;
